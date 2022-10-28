@@ -1,24 +1,20 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import GeneralCharSheet from "./components/GeneralCharSheet";
+import MultilineTextFields from "./components/VampireCharSheet";
+import VampireCharSheet from "./components/VampireCharSheet";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+
+        <div className = 'charSheet'>
+        <VampireCharSheet></VampireCharSheet>
+        </div>
+
+      </body>
     </div>
   );
 }
