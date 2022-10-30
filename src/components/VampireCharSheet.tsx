@@ -24,7 +24,7 @@ export default function VampireCharSheet() {
                     label="Имя Персонажа"
                     multiline
                     maxRows={4}
-                    defaultValue=''
+                    defaultValue=" "
                     onChange={handleChange}
 
                 />
@@ -36,7 +36,7 @@ export default function VampireCharSheet() {
                 label="Возраст"
                 multiline
                 maxRows={4}
-                defaultValue=''
+                defaultValue=" "
                 onChange={handleChange}
             />
             </div>
@@ -47,7 +47,7 @@ export default function VampireCharSheet() {
                     label="ДатаРождения"
                     multiline
                     maxRows={4}
-                    defaultValue=''
+                    defaultValue=" "
                     onChange={handleChange}
                 />
             </div>
@@ -55,19 +55,21 @@ export default function VampireCharSheet() {
             <div id={"character"}>
                 <TextField
                 id="character"
-                label="Характер (пару слов о внутреннем мире)*"
+                label="Характер*"
                 multiline
                 rows={4}
-                defaultValue=""
+                defaultValue="Здесь - укажите пару слов о внутреннем мире вашего персонажа. Его склонности, страхи,
+                мечты, надежды и силы, которые им движут."
             />
             </div>
             <div id={"soloNotLife"}>
                 <TextField
                 id="soloNotLife"
-                label="Самостоятельная не-жизнь (прибытие в Лос-Сантос, планы на не-жизнь)*"
+                label="Самостоятельная не-жизнь*"
                 multiline
                 rows={4}
-                defaultValue=""
+                defaultValue="Опишите ваше прибытие в Лос-Сантос, планы на не-жизнь и возможные занятия,
+                которым будет придаваться ваш персонаж."
             />
             </div>
             <div id={"startDiscipline"}>
@@ -76,16 +78,16 @@ export default function VampireCharSheet() {
                     label="Стартовая Дисциплина*"
                     multiline
                     rows={4}
-                    defaultValue=""
+                    defaultValue=" "
                 />
             </div>
             <div id={"skills"}>
                 <TextField
                     id="skills"
-                    label="Навыки (Может быть, ваш персонаж профессиональный взломщик, либо автомеханик, либо опытный стрелок - укажите это)"
+                    label="Навыки"
                     multiline
                     rows={4}
-                    defaultValue=""
+                    defaultValue="Может быть, ваш персонаж профессиональный взломщик, либо автомеханик, либо опытный стрелок - укажите это."
                 />
             </div>
             <div id={"charBio"}>                <TextField
@@ -93,7 +95,7 @@ export default function VampireCharSheet() {
                 label="Квента*"
                 multiline
                 rows={4}
-                defaultValue=""
+                defaultValue=" "
             /></div>
 
 

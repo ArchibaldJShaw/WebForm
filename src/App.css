@@ -1,13 +1,16 @@
 .App {
   text-align: center;
-  background-color: white; /* #282c34 */
+ /* background-image: url("resources/cleanDarkRedTextureBackground.jpg"); */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: calc(14px + 2vmin);
+  color: #c6cbde;
+}
 
+.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
+  color: #c6cbde;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -20,18 +23,20 @@ div:not(:last-child) {
   margin-bottom: 40px;
 }
 
-#charSheet{
+.fractionSelect {
+  width: 1200px;
+  float:left;
+}
+
+
+#charSheet {
   margin: auto;
   display: flex;
 }
 
-label,input{
+label,input {
   display:flex;
   flex-direction:column;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
