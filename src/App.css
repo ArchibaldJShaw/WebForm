@@ -9,10 +9,6 @@
   color: #c6cbde;
 }
 
-.css-dpjnhs-MuiInputBase-root-MuiOutlinedInput-root {
-  color: #c6cbde;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -23,11 +19,36 @@ div:not(:last-child) {
   margin-bottom: 40px;
 }
 
-.fractionSelect {
-  width: 1200px;
-  float:left;
+
+#fractionSelect{
+  width:600px;
+  height:190px;
+  background-color:green;
+  padding-top:20px;
+  padding-left:15px;
+  padding-right:15px;
 }
 
+#sleeperFractionSelect{
+  float:left;
+  background:Red;
+  width:25%;
+  height:280px;
+}
+
+#vampireFractionSelect{
+  float:left;
+  background:Green;
+  width:50%;
+  height:280px;
+}
+
+#hunterFractionSelect{
+  float:right;
+  background:blue;
+  width:25%;
+  height:280px;
+}
 
 #charSheet {
   margin: auto;

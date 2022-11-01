@@ -12,9 +12,9 @@ const App = () => {
       <body>
 
       <div className= "fractionSelect">
-        <SleeperFractionSelect />
-        <VampireFractionSelect />
-        <HunterFractionSelect />
+          <SleeperFractionSelect />
+          <VampireFractionSelect />
+          <HunterFractionSelect />
       </div>
 
         <div className = "charSheet">
