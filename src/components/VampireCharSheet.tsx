@@ -9,29 +9,31 @@ export default function VampireCharSheet() {
         setValue(event.target.value);
     };
 
+    const formStyles = {
+        '& .MuiTextField-root': { m: 1, width: '30ch' },
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'column'
+    }
+
     return (
         <Box
             component="form"
-            sx={{
-                '& .MuiTextField-root': { m: 1, width: '30ch' },
-            }}
+            sx={formStyles}
             noValidate
             autoComplete="off"
         >
-            <div id={"charName"}>
-                <TextField
-                    id="charName"
-                    label="Имя Персонажа"
-                    multiline
-                    maxRows={4}
-                    defaultValue=" "
-                    onChange={handleChange}
+            <TextField
+                id="charName"
+                label="Имя Персонажа"
+                multiline
+                maxRows={4}
+                defaultValue=" "
+                onChange={handleChange}
 
-                />
-            </div>
-
-            <div id={"charAge"}>
-                <TextField
+            />
+            <TextField
                 id="charAge"
                 label="Возраст"
                 multiline
@@ -39,21 +41,17 @@ export default function VampireCharSheet() {
                 defaultValue=" "
                 onChange={handleChange}
             />
-            </div>
 
-            <div id={"dateOfBirth"}>
-                <TextField
-                    id="dateOfBirth"
-                    label="ДатаРождения"
-                    multiline
-                    maxRows={4}
-                    defaultValue=" "
-                    onChange={handleChange}
-                />
-            </div>
+            <TextField
+                id="dateOfBirth"
+                label="ДатаРождения"
+                multiline
+                maxRows={4}
+                defaultValue=" "
+                onChange={handleChange}
+            />
 
-            <div id={"character"}>
-                <TextField
+            <TextField
                 id="character"
                 label="Характер*"
                 multiline
@@ -61,9 +59,8 @@ export default function VampireCharSheet() {
                 defaultValue="Здесь - укажите пару слов о внутреннем мире вашего персонажа. Его склонности, страхи,
                 мечты, надежды и силы, которые им движут."
             />
-            </div>
-            <div id={"soloNotLife"}>
-                <TextField
+
+            <TextField
                 id="soloNotLife"
                 label="Самостоятельная не-жизнь*"
                 multiline
@@ -71,35 +68,28 @@ export default function VampireCharSheet() {
                 defaultValue="Опишите ваше прибытие в Лос-Сантос, планы на не-жизнь и возможные занятия,
                 которым будет придаваться ваш персонаж."
             />
-            </div>
-            <div id={"startDiscipline"}>
-                <TextField
-                    id="startDiscipline"
-                    label="Стартовая Дисциплина*"
-                    multiline
-                    rows={4}
-                    defaultValue=" "
-                />
-            </div>
-            <div id={"skills"}>
-                <TextField
-                    id="skills"
-                    label="Навыки"
-                    multiline
-                    rows={4}
-                    defaultValue="Может быть, ваш персонаж профессиональный взломщик, либо автомеханик, либо опытный стрелок - укажите это."
-                />
-            </div>
-            <div id={"charBio"}>                <TextField
+            <TextField
+                id="startDiscipline"
+                label="Стартовая Дисциплина*"
+                multiline
+                rows={4}
+                defaultValue=" "
+            />
+            <TextField
+                id="skills"
+                label="Навыки"
+                multiline
+                rows={4}
+                defaultValue="Может быть, ваш персонаж профессиональный взломщик, либо автомеханик, либо опытный стрелок - укажите это."
+            />
+
+            <TextField
                 id="charBio"
                 label="Квента*"
                 multiline
                 rows={4}
                 defaultValue=" "
-            /></div>
-
-
-
+            />
         </Box>
     );
 }
