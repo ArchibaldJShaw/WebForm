@@ -6,24 +6,19 @@ import HunterFractionSelect from "./components/FractionSelect/HunterFractionSele
 import SleeperFractionSelect from "./components/FractionSelect/SleeperFractionSelect";
 
 const App = () => {
-  return (
-    <div className="App">
+    return (
+        <div className="App">
+            <div className= "fractionSelect">
+                <SleeperFractionSelect />
+                <VampireFractionSelect />
+                <HunterFractionSelect />
+            </div>
 
-      <body>
-
-      <div className= "fractionSelect">
-          <SleeperFractionSelect />
-          <VampireFractionSelect />
-          <HunterFractionSelect />
-      </div>
-
-        <div className = "charSheet">
-        <VampireCharSheet />
+            <div className = "charSheet">
+                <VampireCharSheet />
+            </div>
         </div>
-
-      </body>
-    </div>
-  );
+    );
 }
 
 export default App;
