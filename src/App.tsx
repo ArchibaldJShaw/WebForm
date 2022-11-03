@@ -8,13 +8,13 @@ import SleeperFractionSelect from "./components/FractionSelect/SleeperFractionSe
 const App = () => {
     return (
         <div className="App">
-            <div className= "fractionSelect">
+            <div className="fractionSelect">
                 <SleeperFractionSelect />
                 <VampireFractionSelect />
                 <HunterFractionSelect />
             </div>
 
-            <div className = "charSheet">
+            <div className="charSheet">
                 <VampireCharSheet />
             </div>
         </div>
