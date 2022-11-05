@@ -22,51 +22,23 @@
   align-items: center;
 }
 
+#vampireClan-label{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.information{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
 .sleeperFractionSelect,
 .vampireFractionSelect,
 .hunterFractionSelect {
   padding: 0 1.5%;
 }
-
-/*div:not(:last-child) {*/
-/*  margin-bottom: 40px;*/
-/*}*/
-
-
-/*#fractionSelect{*/
-/*  width:600px;*/
-/*  height:190px;*/
-/*  background-color:green;*/
-/*  padding-top:20px;*/
-/*  padding-left:15px;*/
-/*  padding-right:15px;*/
-/*}*/
-
-/*#sleeperFractionSelect{*/
-/*  float:left;*/
-/*  background:Red;*/
-/*  width:25%;*/
-/*  height:280px;*/
-/*}*/
-
-/*#vampireFractionSelect{*/
-/*  float:left;*/
-/*  background:Green;*/
-/*  width:50%;*/
-/*  height:280px;*/
-/*}*/
-
-/*#hunterFractionSelect{*/
-/*  float:right;*/
-/*  background:blue;*/
-/*  width:25%;*/
-/*  height:280px;*/
-/*}*/
-
-/*#charSheet {*/
-/*  margin: auto;*/
-/*  display: flex;*/
-/*}*/
 
 label,input {
   display:flex;

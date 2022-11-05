@@ -1,16 +1,18 @@
-import React from 'react';
+import * as React from 'react';
+import TextField from '@mui/material/TextField';
+import Autocomplete from '@mui/material/Autocomplete';
 
-
-const ClansAutoComplete = () => {
-    return(
-        <div className="ClansAutoComplete">
-
-
-
-        </div>
-
-    )
+export default function ClansAutoComplete() {
+    return (
+        <Autocomplete
+            disablePortal
+            id="vampireClan"
+            options={vampireClans}
+            renderInput={(params) => <TextField {...params} label="Кланы" />}
+        />
+    );
 }
 
+const vampireClans: any = ['Бруха', 'Носферату'];
 
-export default ClansAutoComplete;
+
