@@ -5,7 +5,7 @@ export default function HunterFractionSelect() {
 
     return (
         <div className="hunterFractionSelect">
-            <h2>Охотник</h2>
+            <h2>Фракция 3</h2>
         </div>
     );
 

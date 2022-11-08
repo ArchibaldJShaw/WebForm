@@ -5,7 +5,7 @@ export default function VampireFractionSelect() {
 
     return (
         <div className="vampireFractionSelect">
-            <h2>Вампир</h2>
+            <h2>Фракция 2</h2>
         </div>
     );
 

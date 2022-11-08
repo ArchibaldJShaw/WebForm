@@ -13,6 +13,6 @@ export default function ClansAutoComplete() {
     );
 }
 
-const vampireClans: any = ['Бруха', 'Носферату'];
+const vampireClans: any = ['Вентру', 'Бруха', 'Тремер', 'Тореадор', 'Цимисх', 'Малкавиан', 'Равнос', 'Гангрел', 'Ассамит', 'Носферату'];
 
 

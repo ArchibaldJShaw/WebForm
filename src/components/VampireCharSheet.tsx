@@ -44,7 +44,7 @@ export default function VampireCharSheet() {
             />
             <TextField
                 id="dateOfBirth"
-                label="ДатаРождения"
+                label="Дата Рождения"
                 multiline
                 maxRows={4}
                 defaultValue=" "
