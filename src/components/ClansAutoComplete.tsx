@@ -8,11 +8,11 @@ export default function ClansAutoComplete() {
             disablePortal
             id="vampireClan"
             options={vampireClans}
-            renderInput={(params) => <TextField {...params} label="Кланы" />}
+            renderInput={(params) => <TextField {...params} label="Клан" />}
         />
     );
 }
 
-const vampireClans: any = ['Бруха', 'Носферату'];
+const vampireClans: any = ['Вентру', 'Бруха', 'Тремер', 'Тореадор', 'Цимисх', 'Малкавиан', 'Равнос', 'Гангрел', 'Ассамит', 'Носферату'];
 
 

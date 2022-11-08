@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import ClansAutoComplete from "./ClansAutoComplete";
 
+
 export default function VampireCharSheet() {
     const [value, setValue] = React.useState('Controlled');
 
@@ -44,7 +45,7 @@ export default function VampireCharSheet() {
             />
             <TextField
                 id="dateOfBirth"
-                label="ДатаРождения"
+                label="Дата Рождения"
                 multiline
                 maxRows={4}
                 defaultValue=" "
