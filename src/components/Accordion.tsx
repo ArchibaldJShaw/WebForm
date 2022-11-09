@@ -17,16 +17,15 @@ export default function ControlledAccordions() {
 
     return (
         <div>
-            <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+            <Accordion expanded={expanded === 'PlayerInfoPanel'} onChange={handleChange('PlayerInfoPanel')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1bh-content"
-                    id="panel1bh-header"
+                    aria-controls="PlayerInfoPanel-content"
+                    id="PlayerInfoPanel-header"
                 >
                     <Typography sx={{ width: '33%', flexShrink: 0 }}>
                         Карточка игрока
                     </Typography>
-                    <Typography sx={{ color: 'text.secondary' }}>Укажите здесь информацию о себе.</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
@@ -38,16 +37,13 @@ export default function ControlledAccordions() {
             </Accordion>
 
 
-            <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+            <Accordion expanded={expanded === 'charSheetPanel'} onChange={handleChange('charSheetPanel')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2bh-content"
-                    id="panel2bh-header"
+                    aria-controls="charSheetPanel-content"
+                    id="charSheetPanel-header"
                 >
                     <Typography sx={{ width: '33%', flexShrink: 0 }}>Карточка персонажа</Typography>
-                    <Typography sx={{ color: 'text.secondary' }}>
-                       Укажите здесь информацию о своем персонаже.
-                    </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>

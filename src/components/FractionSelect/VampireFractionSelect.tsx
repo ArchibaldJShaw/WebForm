@@ -1,11 +1,13 @@
 import * as React from "react";
+import vampire from "../../resources/images/vampire.png";
 
 
 export default function VampireFractionSelect() {
 
     return (
         <div className="vampireFractionSelect">
-            <h2>Фракция 2</h2>
+            <img id ="vampire" src={vampire} />
+            <h2>Вампир</h2>
         </div>
     );
 
