@@ -2,14 +2,17 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import ClansAutoComplete from "./ClansAutoComplete";
+import ClansDescription from "./ClansDescription";
 
 
 export default function VampireCharSheet() {
     const [value, setValue] = React.useState('Controlled');
+    const [clan, setClan] = React.useState(null);
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setValue(event.target.value);
     };
+
 
     const formStyles = {
         '& .MuiTextField-root': { m: 1, width: '60ch' },
@@ -51,7 +54,15 @@ export default function VampireCharSheet() {
                 defaultValue=" "
                 onChange={handleChange}
             />
-            <ClansAutoComplete/>
+            <ClansAutoComplete
+            onChange = {setClan}
+
+            />
+            <ClansDescription
+            clan={clan}
+            />
+
+
             <TextField
                 id="character"
                 label="Характер*"
