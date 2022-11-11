@@ -6,7 +6,6 @@ export default function ClansAutoComplete({onChange} : any) {
 
     const handleOnChange = (e : any, value: any) => {
         onChange(value)
-        console.log(e)
     }
 
     return (

@@ -49,6 +49,8 @@ img {
   border-color:black;
   border-radius: 10px;
   font-size: 10px;
+  font-weight: normal;
+  letter-spacing: inherit;
 }
 
 
