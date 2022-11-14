@@ -3,7 +3,7 @@ import VampireCharSheet from "./VampireCharSheet";
 
 class VampireCharSheetSelected extends React.Component {
     state = {
-        fraction: 'Sleeper'
+        fraction: 'vampire'
     }
     render() {
         return VampireCharSheet();
