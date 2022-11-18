@@ -44,13 +44,12 @@ export default function SleeperCharSheet() {
             />
             <TextField
                 id="dateOfBirth"
-                label="ДатаРождения"
+                label="Дата Рождения"
                 multiline
                 maxRows={4}
                 defaultValue=" "
                 onChange={handleChange}
             />
-            <ClansAutoComplete/>
             <TextField
                 id="character"
                 label="Характер*"
@@ -66,13 +65,6 @@ export default function SleeperCharSheet() {
                 rows={4}
                 defaultValue="Опишите ваше прибытие в Лос-Сантос, планы на не-жизнь и возможные занятия,
                 которым будет придаваться ваш персонаж."
-            />
-            <TextField
-                id="startDiscipline"
-                label="Стартовая Дисциплина*"
-                multiline
-                rows={4}
-                defaultValue=" "
             />
             <TextField
                 id="skills"

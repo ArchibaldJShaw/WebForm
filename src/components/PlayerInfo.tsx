@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import ClansAutoComplete from "./ClansAutoComplete";
 
-export default function SleeperCharSheet() {
+export default function PlayerInfo() {
     const [value, setValue] = React.useState('Controlled');
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
