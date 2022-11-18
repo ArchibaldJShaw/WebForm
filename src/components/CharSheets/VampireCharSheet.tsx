@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import ClansAutoComplete from "./ClansAutoComplete";
-import ClansDescription from "./ClansDescription";
+import ClansAutoComplete from "../ClansAutoComplete";
+import ClansDescription from "../ClansDescription";
 
 
-export default function VampireCharSheet() {
+export default function VampireCharSheet({fraction} : any) {
     const [value, setValue] = React.useState('Controlled');
     const [clan, setClan] = React.useState(null);
 
@@ -36,7 +36,6 @@ export default function VampireCharSheet() {
                 maxRows={4}
                 defaultValue=" "
                 onChange={handleChange}
-
             />
             <TextField
                 id="charAge"
@@ -56,13 +55,10 @@ export default function VampireCharSheet() {
             />
             <ClansAutoComplete
             onChange = {setClan}
-
             />
             <ClansDescription
             clan={clan}
             />
-
-
             <TextField
                 id="character"
                 label="Характер*"
@@ -103,3 +99,5 @@ export default function VampireCharSheet() {
         </Box>
     );
 }
+
+

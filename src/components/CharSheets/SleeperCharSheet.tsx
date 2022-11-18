@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import ClansAutoComplete from "./ClansAutoComplete";
+import ClansAutoComplete from "../ClansAutoComplete";
 
 export default function SleeperCharSheet() {
     const [value, setValue] = React.useState('Controlled');
