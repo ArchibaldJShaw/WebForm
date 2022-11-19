@@ -1,6 +1,5 @@
 import * as React from "react";
 import vampire from "../../resources/images/vampire.png";
-import civil from "../../resources/images/civil.jpg";
 import {useFractionContext} from "./FractionContext";
 
 
@@ -13,7 +12,7 @@ export default function VampireFractionSelect() {
             <input type="image" src={vampire} name="saveVampire" className="vampireFractionSelect" id="vampire" />
             <h2>Вампир</h2>
         </div>
-        //по выбору рендерить чарлист.
+
     );
 
 }

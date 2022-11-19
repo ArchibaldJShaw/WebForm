@@ -2,7 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 
-export default function SleeperCharSheet() {
+export default function HunterCharSheet() {
     const [value, setValue] = React.useState('Controlled');
 
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -97,6 +97,20 @@ export default function SleeperCharSheet() {
                 rows={4}
                 defaultValue="Опишите ваше прибытие в Лос-Сантос, планы на жизнь и возможные занятия,
                 которым будет придаваться ваш персонаж."
+            />
+            <TextField
+                id="awakening"
+                label="Встреча с паранормальным"
+                multiline
+                rows={4}
+                defaultValue=" "
+            />
+            <TextField
+                id="Education"
+                label="Вступление в ряды Проета Рассвет"
+                multiline
+                rows={4}
+                defaultValue=" "
             />
             <TextField
                 id="skills"

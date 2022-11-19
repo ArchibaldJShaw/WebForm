@@ -8,6 +8,7 @@ import VampireCharSheet from "./CharSheets/VampireCharSheet";
 import SleeperCharSheet from "./CharSheets/SleeperCharSheet"
 import PlayerInfo from './PlayerInfo';
 import {useFractionContext} from "./FractionSelect/FractionContext";
+import HunterCharSheet from "./CharSheets/HunterCharSheet";
 
 export default function ControlledAccordions() {
     const [expanded, setExpanded] = React.useState<string | false>(false);
@@ -53,6 +54,7 @@ export default function ControlledAccordions() {
                         <div className = "charSheet">
                             { fraction === "sleeper" && (<SleeperCharSheet/>) }
                             { fraction === "vampire" && (<VampireCharSheet/>) }
+                            { fraction === "hunter" && (<HunterCharSheet/>)}
                         </div>
                     </Typography>
                 </AccordionDetails>
