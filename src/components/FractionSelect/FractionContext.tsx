@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState } from 'react';
 
 const useFraction = () => {
-    const [fraction, setFraction] = useState <string>("sleeper");
+    const [fraction, setFraction] = useState <string>("null");
 
     return {
         fraction,

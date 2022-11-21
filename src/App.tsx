@@ -19,8 +19,8 @@ const App = () => {
             <Accordion />
             </div>
         </div>
-        </FractionContext>
-    );
+            </FractionContext>
+    )
 }
 
 export default App;

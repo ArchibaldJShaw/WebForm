@@ -34,12 +34,15 @@ export default function ControlledAccordions() {
                 <AccordionDetails>
                     <Typography>
                         <div className = "PlayerInfo">
-                        <PlayerInfo/>
+                            { fraction === null && (null) }
+                            { fraction === "sleeper" && (<PlayerInfo/>)}
+                            { fraction === "vampire" && (<PlayerInfo/>)}
+                            { fraction === "hunter"  && (<PlayerInfo/>)}
+
                         </div>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-
 
             <Accordion expanded={expanded === 'charSheetPanel'} onChange={handleChange('charSheetPanel')}>
                 <AccordionSummary
@@ -52,13 +55,15 @@ export default function ControlledAccordions() {
                 <AccordionDetails>
                     <Typography>
                         <div className = "charSheet">
+                            { fraction === null && (null) }
                             { fraction === "sleeper" && (<SleeperCharSheet/>) }
                             { fraction === "vampire" && (<VampireCharSheet/>) }
-                            { fraction === "hunter" && (<HunterCharSheet/>)}
+                            { fraction === "hunter" && (<HunterCharSheet/>) }
                         </div>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
         </div>
+
     );
 }
