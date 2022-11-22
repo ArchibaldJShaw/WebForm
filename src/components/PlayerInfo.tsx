@@ -51,7 +51,7 @@ export default function PlayerInfo() {
             />
             <TextField
                 id="dateOfBirth"
-                label="Ваш Discord"
+                label="Дата Рождения"
                 multiline
                 maxRows={4}
                 defaultValue=" "
