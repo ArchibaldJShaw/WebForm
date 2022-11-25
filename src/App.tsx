@@ -4,9 +4,11 @@ import VampireFractionSelect from "./components/FractionSelect/VampireFractionSe
 import HunterFractionSelect from "./components/FractionSelect/HunterFractionSelect";
 import SleeperFractionSelect from "./components/FractionSelect/SleeperFractionSelect";
 import Accordion from './components/Accordion';
-import FractionContext from './components/FractionSelect/FractionContext';
+import FractionContext, {useFractionContext} from './components/FractionSelect/FractionContext';
+
 
 const App = () => {
+
     return (
         <FractionContext>
         <div className="App">

@@ -19,7 +19,7 @@ export default function ControlledAccordions() {
             setExpanded(isExpanded ? panel : false);
         };
 
-    return (
+    const contentNode = (
         <div>
             <Accordion expanded={expanded === 'PlayerInfoPanel'} onChange={handleChange('PlayerInfoPanel')}>
                 <AccordionSummary
@@ -38,7 +38,6 @@ export default function ControlledAccordions() {
                             { fraction === "sleeper" && (<PlayerInfo/>)}
                             { fraction === "vampire" && (<PlayerInfo/>)}
                             { fraction === "hunter"  && (<PlayerInfo/>)}
-
                         </div>
                     </Typography>
                 </AccordionDetails>
@@ -64,6 +63,9 @@ export default function ControlledAccordions() {
                 </AccordionDetails>
             </Accordion>
         </div>
+    )
 
+    return (
+        fraction !== "" ?<>{contentNode}</> : null
     );
 }
