@@ -9,19 +9,19 @@ import SleeperCharSheet from "./CharSheets/SleeperCharSheet"
 import PlayerInfo from './PlayerInfo';
 import {useFractionContext} from "./FractionSelect/FractionContext";
 import HunterCharSheet from "./CharSheets/HunterCharSheet";
-import {useState} from "react";
 
 export default function ControlledAccordions() {
-    const [expanded, setExpanded] = useState(false);
+    const [expanded, setExpanded] = React.useState<string | false>(false);
     const {fraction} = useFractionContext();
 
-    function onClick(props: any)  {
-        setExpanded(props);
+    const handleChange =
+        (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
+            setExpanded(isExpanded ? panel : false);
         };
 
     const contentNode = (
         <div>
-            <Accordion expanded={expanded} onClick={() => onClick(!expanded)}>
+            <Accordion expanded={expanded === 'PlayerInfoPanel'} onChange={handleChange('PlayerInfoPanel')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="PlayerInfoPanel-content"
@@ -43,7 +43,7 @@ export default function ControlledAccordions() {
                 </AccordionDetails>
             </Accordion>
 
-            <Accordion expanded={!!!fraction} onClick={() => onClick(!expanded)}>
+            <Accordion expanded={expanded === 'charSheetPanel'} onChange={handleChange('charSheetPanel')}>
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     aria-controls="charSheetPanel-content"
